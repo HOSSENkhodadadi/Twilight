@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Moving icon in top right -->
+    <div class="moving-icon" id="movingIcon"></div>
+
+    <!-- Image slider -->
+    <div class="slider-container">
+        <div id="slider">
+            <img src="image1.jpg" alt="Slide 1">
+            <img src="image2.jpg" alt="Slide 2">
+            <img sßrc="image3.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Audio Playback -->
+    <audio id="audio1" src="/static/audio/1.wav"></audio>
+    <audio id="audio2" src="/static/audio/2.wav"></audio>
+    
+    <!-- Recording Section -->
+    <div id="recording-section" style="display:none;">
+        <h3>Record your audio:</h3>
+        <button id="recordButton">Record</button>
+        <button id="stopButton" disabled>Stop</button>
+        <p id="recordStatus">Status: Not recording</p>
+    </div>
+
+    <!-- Final Audio -->
+    <audio id="finalAudio" src="/static/audio/final.wav" style="display:none;"></audio>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

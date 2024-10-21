@@ -1,0 +1,52 @@
+/* General styles */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Moving icon */
+.moving-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    animation: moveIcon 3s infinite alternate;
+}
+
+/* Keyframe for animation */
+@keyframes moveIcon {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
+
+/* Slider container */
+.slider-container {
+    width: 400px;
+    height: 300px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.slider-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Recording section */
+#recording-section {
+    margin-top: 20px;
+    text-align: center;
+}
