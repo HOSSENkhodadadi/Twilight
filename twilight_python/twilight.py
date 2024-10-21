@@ -4,6 +4,7 @@ import scipy.io.wavfile as wav
 
 import os
 from groq import Groq
+# import numpy
 
 import asyncio
 import edge_tts
